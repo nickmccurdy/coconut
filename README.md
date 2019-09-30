@@ -51,13 +51,12 @@ This project follows the [Airbnb style guide](https://github.com/airbnb/javascri
 ### Local Testing
 
 There are a quite a few ways to go about testing updates to this NPM package locally, before
-submitting a pull request. One way is to install from a commit on your feature branch:
+submitting a pull request. One way is to install from a commit on your feature branch. Below is a
+`package.json` example (be sure to update dependency url and commit hash as needed):
 
 ```json
-// package.json
 {
    "dependencies": {
-     // Update url and commit hash as needed.
     "@curriculum-advantage/coconut": "git+https://github.com/curriculum-advantage/coconut.git#452c7be",
   }
 }
