@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createPrandoDistributor function should create a callback that returns a deterministically shuffled, proportionally distributed type 1`] = `
+Array [
+  3,
+  2,
+  4,
+  2,
+  1,
+  3,
+  3,
+  4,
+  4,
+  4,
+]
+`;
+
+exports[`createPrandoDistributor function should create a callback that returns the same type when passed in a duplicate index 1`] = `true`;
+
+exports[`createPrandoDistributor function should return a callback function 1`] = `"function"`;
+
+exports[`createPrandoIntGenerator function should create a callback that returns proportionally distributed integers, and does so repeatedly 1`] = `
+Array [
+  5,
+  4,
+  8,
+  2,
+  0,
+  3,
+  6,
+  7,
+  9,
+  1,
+]
+`;
+
+exports[`createPrandoIntGenerator function should create a callback that returns proportionally distributed integers, and does so repeatedly 2`] = `
+Array [
+  0,
+  1,
+  4,
+  8,
+  9,
+  2,
+  5,
+  6,
+  7,
+  3,
+]
+`;
+
+exports[`createPrandoIntGenerator function should return a callback function 1`] = `"function"`;
+
+exports[`itemExists function should return false when the given item is not included in the given array 1`] = `false`;
+
+exports[`itemExists function should return true when the given item is included in the given array 1`] = `true`;
+
+exports[`populateArray function should return a non-unique, populated array with the correct length when a isDuplicate callback is not provided 1`] = `
+Array [
+  2,
+  2,
+  2,
+]
+`;
+
+exports[`populateArray function should return a unique, populated array with the correct length when a isDuplicate callback is provided 1`] = `
+Array [
+  2,
+  845678,
+  3,
+  5,
+  8,
+  9,
+]
+`;
+
+exports[`prandoDigits function should return a unique array of deterministically random digits, including zeros, when passed both options 1`] = `
+Array [
+  7,
+  3,
+  0,
+  8,
+  1,
+  5,
+  2,
+  6,
+  4,
+  9,
+]
+`;
+
+exports[`prandoDigits function should return an array of deterministically random digits with the given range 1`] = `
+Array [
+  1,
+  3,
+  2,
+]
+`;
+
+exports[`prandoDigits function should return an array of deterministically random digits, with the given length 1`] = `8`;
+
+exports[`prandoShuffle function should return a new shuffled array using items from the given array 1`] = `
+Array [
+  939,
+  77,
+  3,
+  3,
+]
+`;

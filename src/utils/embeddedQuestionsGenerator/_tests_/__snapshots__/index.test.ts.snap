@@ -1,0 +1,491 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`embeddedQuestionsGenerator should allow shuffled answer choices to organically end up in the same order that they were passed in, when forceShuffledChoices is left at its default state of false 1`] = `
+Array [
+  Object {
+    "answerChoices": Array [
+      2,
+      1,
+    ],
+    "correctAnswer": Array [
+      2,
+    ],
+    "distractors": Array [
+      1,
+    ],
+    "stem": "1 + 1",
+  },
+  Object {
+    "answerChoices": Array [
+      1,
+      5,
+    ],
+    "correctAnswer": Array [
+      5,
+    ],
+    "distractors": Array [
+      1,
+    ],
+    "stem": "3 + 2",
+  },
+  Object {
+    "answerChoices": Array [
+      4,
+      1,
+    ],
+    "correctAnswer": Array [
+      4,
+    ],
+    "distractors": Array [
+      1,
+    ],
+    "stem": "2 + 2",
+  },
+  Object {
+    "answerChoices": Array [
+      3,
+      1,
+    ],
+    "correctAnswer": Array [
+      3,
+    ],
+    "distractors": Array [
+      1,
+    ],
+    "stem": "1 + 2",
+  },
+  Object {
+    "answerChoices": Array [
+      2,
+      1,
+    ],
+    "correctAnswer": Array [
+      1,
+    ],
+    "distractors": Array [
+      2,
+    ],
+    "stem": "1 + 0",
+  },
+]
+`;
+
+exports[`embeddedQuestionsGenerator should ensure that answer choices are shuffled in a way that they are never in the same order in which they were passed in, when forceShuffledChoices is set to true 1`] = `
+Array [
+  Object {
+    "answerChoices": Array [
+      1,
+      2,
+    ],
+    "correctAnswer": Array [
+      2,
+    ],
+    "distractors": Array [
+      1,
+    ],
+    "stem": "1 + 1",
+  },
+  Object {
+    "answerChoices": Array [
+      1,
+      5,
+    ],
+    "correctAnswer": Array [
+      5,
+    ],
+    "distractors": Array [
+      1,
+    ],
+    "stem": "3 + 2",
+  },
+  Object {
+    "answerChoices": Array [
+      1,
+      4,
+    ],
+    "correctAnswer": Array [
+      4,
+    ],
+    "distractors": Array [
+      1,
+    ],
+    "stem": "2 + 2",
+  },
+  Object {
+    "answerChoices": Array [
+      1,
+      3,
+    ],
+    "correctAnswer": Array [
+      3,
+    ],
+    "distractors": Array [
+      1,
+    ],
+    "stem": "1 + 2",
+  },
+  Object {
+    "answerChoices": Array [
+      2,
+      1,
+    ],
+    "correctAnswer": Array [
+      1,
+    ],
+    "distractors": Array [
+      2,
+    ],
+    "stem": "1 + 0",
+  },
+]
+`;
+
+exports[`embeddedQuestionsGenerator should keep questions in order if shuffledQuestions is set to false 1`] = `
+Array [
+  Object {
+    "answerChoices": Array [
+      2,
+      1,
+      5,
+      3,
+      4,
+    ],
+    "correctAnswer": Array [
+      3,
+    ],
+    "distractors": Array [
+      1,
+      2,
+      4,
+      5,
+    ],
+    "stem": "1 + 2",
+  },
+  Object {
+    "answerChoices": Array [
+      1,
+      2,
+      3,
+      4,
+      5,
+    ],
+    "correctAnswer": Array [
+      5,
+    ],
+    "distractors": Array [
+      1,
+      2,
+      3,
+      4,
+    ],
+    "stem": "3 + 2",
+  },
+  Object {
+    "answerChoices": Array [
+      2,
+      1,
+      4,
+      5,
+      3,
+    ],
+    "correctAnswer": Array [
+      2,
+    ],
+    "distractors": Array [
+      1,
+      3,
+      4,
+      5,
+    ],
+    "stem": "1 + 1",
+  },
+  Object {
+    "answerChoices": Array [
+      1,
+      3,
+      4,
+      5,
+      2,
+    ],
+    "correctAnswer": Array [
+      1,
+    ],
+    "distractors": Array [
+      2,
+      3,
+      4,
+      5,
+    ],
+    "stem": "1 + 0",
+  },
+  Object {
+    "answerChoices": Array [
+      3,
+      2,
+      1,
+      4,
+      5,
+    ],
+    "correctAnswer": Array [
+      4,
+    ],
+    "distractors": Array [
+      1,
+      2,
+      3,
+      5,
+    ],
+    "stem": "2 + 2",
+  },
+]
+`;
+
+exports[`embeddedQuestionsGenerator should not add answer choices to the questions if shuffledChoices is set to false 1`] = `
+Array [
+  Object {
+    "correctAnswer": Array [
+      2,
+    ],
+    "distractors": Array [
+      1,
+      3,
+      4,
+      5,
+    ],
+    "stem": "1 + 1",
+  },
+  Object {
+    "correctAnswer": Array [
+      5,
+    ],
+    "distractors": Array [
+      1,
+      2,
+      3,
+      4,
+    ],
+    "stem": "3 + 2",
+  },
+  Object {
+    "correctAnswer": Array [
+      4,
+    ],
+    "distractors": Array [
+      1,
+      2,
+      3,
+      5,
+    ],
+    "stem": "2 + 2",
+  },
+  Object {
+    "correctAnswer": Array [
+      3,
+    ],
+    "distractors": Array [
+      1,
+      2,
+      4,
+      5,
+    ],
+    "stem": "1 + 2",
+  },
+  Object {
+    "correctAnswer": Array [
+      1,
+    ],
+    "distractors": Array [
+      2,
+      3,
+      4,
+      5,
+    ],
+    "stem": "1 + 0",
+  },
+]
+`;
+
+exports[`embeddedQuestionsGenerator should return a shuffled version of the available questions being passed in, with shuffled answer choices (including all correct answers and distractors) added to each question 1`] = `
+Array [
+  Object {
+    "answerChoices": Array [
+      1,
+      3,
+      4,
+      5,
+      2,
+    ],
+    "correctAnswer": Array [
+      2,
+    ],
+    "distractors": Array [
+      1,
+      3,
+      4,
+      5,
+    ],
+    "stem": "1 + 1",
+  },
+  Object {
+    "answerChoices": Array [
+      5,
+      1,
+      3,
+      4,
+      2,
+    ],
+    "correctAnswer": Array [
+      5,
+    ],
+    "distractors": Array [
+      1,
+      2,
+      3,
+      4,
+    ],
+    "stem": "3 + 2",
+  },
+  Object {
+    "answerChoices": Array [
+      4,
+      2,
+      3,
+      5,
+      1,
+    ],
+    "correctAnswer": Array [
+      4,
+    ],
+    "distractors": Array [
+      1,
+      2,
+      3,
+      5,
+    ],
+    "stem": "2 + 2",
+  },
+  Object {
+    "answerChoices": Array [
+      4,
+      2,
+      1,
+      3,
+      5,
+    ],
+    "correctAnswer": Array [
+      3,
+    ],
+    "distractors": Array [
+      1,
+      2,
+      4,
+      5,
+    ],
+    "stem": "1 + 2",
+  },
+  Object {
+    "answerChoices": Array [
+      1,
+      3,
+      5,
+      2,
+      4,
+    ],
+    "correctAnswer": Array [
+      1,
+    ],
+    "distractors": Array [
+      2,
+      3,
+      4,
+      5,
+    ],
+    "stem": "1 + 0",
+  },
+]
+`;
+
+exports[`embeddedQuestionsGenerator should return only the number of questions specified by requiredQuestionCount 1`] = `
+Array [
+  Object {
+    "answerChoices": Array [
+      1,
+      3,
+      4,
+      5,
+      2,
+    ],
+    "correctAnswer": Array [
+      2,
+    ],
+    "distractors": Array [
+      1,
+      3,
+      4,
+      5,
+    ],
+    "stem": "1 + 1",
+  },
+]
+`;
+
+exports[`embeddedQuestionsGenerator should support questions passed in as a grouped format, while keeping grouped questions together during the shuffling process, when groupedQuestions is set to true 1`] = `
+Array [
+  Object {
+    "answerChoices": Array [
+      "Some other place",
+      "Some place",
+    ],
+    "correctAnswer": Array [
+      "Some place",
+    ],
+    "distractors": Array [
+      "Some other place",
+    ],
+    "paragraph": "Story two text here.",
+    "stem": "Where does this story begin?",
+  },
+  Object {
+    "answerChoices": Array [
+      "Some time",
+      "Some other time",
+    ],
+    "correctAnswer": Array [
+      "Some time",
+    ],
+    "distractors": Array [
+      "Some other time",
+    ],
+    "paragraph": "Story two text here.",
+    "stem": "When does this story take place?",
+  },
+  Object {
+    "answerChoices": Array [
+      "Some place",
+      "Some other place",
+    ],
+    "correctAnswer": Array [
+      "Some place",
+    ],
+    "distractors": Array [
+      "Some other place",
+    ],
+    "paragraph": "Story one text here.",
+    "stem": "Where does this story begin?",
+  },
+  Object {
+    "answerChoices": Array [
+      "Some other time",
+      "Some time",
+    ],
+    "correctAnswer": Array [
+      "Some time",
+    ],
+    "distractors": Array [
+      "Some other time",
+    ],
+    "paragraph": "Story one text here.",
+    "stem": "When does this story take place?",
+  },
+]
+`;
