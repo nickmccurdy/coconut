@@ -24,7 +24,9 @@ This package was created in order to:
 
 From the root of your project folder, use the npm CLI to install this package:
 
-`npm i @curriculum-advantage/coconut`
+```bash
+npm i @curriculum-advantage/coconut
+```
 
 ## Usage
 
