@@ -4,6 +4,7 @@
   "publisher": "Curriculum Advantage",
   "version": "1.0.0",
   "main": "dist/main.js",
+  "types": "dist/main.d.ts",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -31,7 +32,7 @@
     "config": "cross-env webpack --config tools/webpack/webpack.config.ts",
     "bundle": "cross-env npm run config -- --mode production",
     "dev": "cross-env npm run config -- --mode development --watch --progress --display-error-details",
-    "prepare": "cross-env npm run clean && npm run bundle",
+    "prepare": "cross-env npm run clean && npm run bundle && npm run types",
     "convertMathJaxJson": "cross-env node src/lib/jsonConversion/jsonConversion.js data/"
   },
   "husky": {

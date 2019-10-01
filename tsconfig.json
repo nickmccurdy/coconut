@@ -1,25 +1,25 @@
 {
   "compilerOptions": {
-    // Process & infer types from .js files.
-    "allowJs": true,
-
     // Import non-ES modules as default imports.
     "esModuleInterop": true,
 
     // Search under node_modules for non-relative imports.
     "moduleResolution": "node",
+  
+    // Generates corresponding d.ts files.
+    "declaration": true,
 
-    // Only use `tsc` for type-checking. Let Babel handle compilation via Webpack.
-    "noEmit": true,
+    // Only emit ‘.d.ts’ declaration files. Let Babel handle compilation via Webpack.
+    "emitDeclarationOnly": true,
+
+    // Concatenate and emit output to single file.
+    "outFile": "dist/main.d.ts",
 
     // Target latest version of ECMAScript.
     "target": "esnext",
 
     // Enable all strict type checking options.
     "strict": true,
-
-    // Disallow features that require cross-file information (allows Babel to safely compile).
-    "isolatedModules": true,
 
     /* Additional lint rules */
 
